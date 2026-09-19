@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Manga & Manhwa Reading Tracker</title>
+<meta name="description" content="Organize your manga and manhwa library, track chapters, discover genres and monitor reading progress.">
+<style>
+:root{--p:#7657d9;--p2:#5b43b5;--bg:#fcfaff;--ink:#27243a;--muted:#706b82;--line:#e9e2f2}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:var(--ink);background:linear-gradient(#fcfaff,#fff);line-height:1.6}
+a{text-decoration:none}.wrap{max-width:1100px;margin:auto;padding:0 22px}nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}.logo{font-weight:900;font-size:20px}.logo span{color:var(--p)}.nav{display:flex;gap:20px;color:var(--muted);font-size:14px}
+.hero{text-align:center;padding:70px 0 75px}.badge{display:inline-block;background:#eee8ff;color:var(--p2);padding:7px 13px;border-radius:99px;font-weight:700;font-size:13px}
+h1{font-size:clamp(44px,7vw,74px);line-height:1;letter-spacing:-.055em;max-width:850px;margin:20px auto}.hero p{max-width:700px;margin:0 auto 28px;color:var(--muted);font-size:18px}
+.buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}.btn{padding:13px 20px;border-radius:12px;font-weight:800;border:1px solid var(--line);display:inline-block}.primary{background:var(--p);color:white;border-color:var(--p)}
+.note{text-align:center;color:var(--muted);font-size:12px;margin-top:12px}
+section{padding:65px 0}.title{text-align:center;max-width:700px;margin:0 auto 35px}.title h2{font-size:36px;letter-spacing:-.04em;margin:0 0 8px}.title p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 12px 35px #5b43b510}.icon{font-size:22px;background:#eee8ff;width:44px;height:44px;display:grid;place-items:center;border-radius:12px}.card h3{margin:13px 0 5px}.card p{margin:0;color:var(--muted);font-size:14px}
+.preview{background:white;border:1px solid var(--line);padding:12px;border-radius:22px;box-shadow:0 18px 55px #46307818}.preview img{width:100%;border-radius:14px;display:block}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.step{padding:20px;background:white;border:1px solid var(--line);border-radius:16px}.num{color:var(--p);font-weight:900}.step p{color:var(--muted);font-size:14px}
+.price{max-width:720px;margin:auto;background:white;border:2px solid var(--p);border-radius:22px;padding:30px;box-shadow:0 18px 55px #46307818}.price .amount{font-size:42px;font-weight:900}.price li{color:var(--muted);margin:5px 0}
+.faq{max-width:800px;margin:auto}.faq details{background:white;border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:10px 0}.faq summary{font-weight:800;cursor:pointer}
+footer{border-top:1px solid var(--line);padding:35px 0;color:var(--muted);font-size:13px}
+@media(max-width:760px){.grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.nav{display:none}}
+@media(max-width:520px){.grid,.steps{grid-template-columns:1fr}h1{font-size:46px}}
+</style></head>
+<body><div class="wrap">
+<nav><div class="logo">Manga<span>Track</span></div><div class="nav"><a href="#features">Features</a><a href="#how">How it works</a><a href="#faq">FAQ</a></div></nav>
+<section class="hero">
+<div class="badge">✨ Ultimate Manga & Manhwa Reading Tracker</div>
+<h1>Never lose track of what you're reading.</h1>
+<p>Organize your manga and manhwa library, track chapters, discover stories by genre, log reading sessions, and watch your progress grow — all in one beautiful spreadsheet.</p>
+<div class="buttons">
+<a class="btn primary" href="https://lopabster.gumroad.com/l/manhwa-tracker" target="_blank" rel="noopener">Buy the Tracker →</a>
+<a class="btn" href="https://lopabster.gumroad.com/l/manhwa-tracker" target="_blank" rel="noopener">Get it on Gumroad →</a>
+</div><div class="note">Digital download • Excel + Google Sheets friendly • Personal use</div>
+</section>
+<section id="features"><div class="title"><h2>Everything a reader needs</h2><p>Designed to feel more like a personal reading dashboard than a plain spreadsheet.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">📚</div><h3>Library</h3><p>Titles, genres, status, ratings, chapters, dates, source and notes in one place.</p></div>
+<div class="card"><div class="icon">📈</div><h3>Automatic Progress</h3><p>Track chapters read and progress percentage automatically.</p></div>
+<div class="card"><div class="icon">🔎</div><h3>Genre Finder</h3><p>Filter by genre, status and type to find your next read faster.</p></div>
+<div class="card"><div class="icon">📝</div><h3>Reading Log</h3><p>Record reading sessions and keep your history organized.</p></div>
+<div class="card"><div class="icon">⭐</div><h3>Favorites & Ratings</h3><p>Mark favorites and rate the series you love.</p></div>
+<div class="card"><div class="icon">🎯</div><h3>Goals & Dashboard</h3><p>Set reading goals and see your collection at a glance.</p></div>
+</div></section>
+<section><div class="title"><h2>Genre filtering, made simple</h2><p>The Google Sheets version updates automatically when you choose a genre, status or type.</p></div>
+<div class="preview"><img src="genre-filter-guide.png" alt="Genre filter tutorial"></div></section>
+<section id="how"><div class="title"><h2>Start in four simple steps</h2></div>
+<div class="steps"><div class="step"><div class="num">01</div><h3>Add your library</h3><p>Enter what you're reading or planning to read.</p></div><div class="step"><div class="num">02</div><h3>Track chapters</h3><p>Update your progress whenever you read.</p></div><div class="step"><div class="num">03</div><h3>Find your next read</h3><p>Use filters to explore your collection.</p></div><div class="step"><div class="num">04</div><h3>Watch it grow</h3><p>Use the dashboard and goals to stay organized.</p></div></div></section>
+<section><div class="price"><h2>Ultimate Tracker</h2><div class="amount">$7.99</div><ul><li>Excel tracker</li><li>Google Sheets-friendly version</li><li>Genre Finder</li><li>Dashboard & goals</li><li>Reading Log</li><li>Notes & Quotes</li><li>Quick Start Guide</li></ul><a class="btn primary" href="https://lopabster.gumroad.com/l/manhwa-tracker" target="_blank" rel="noopener">Get the Tracker →</a></div></section>
+<section id="faq"><div class="title"><h2>Frequently asked questions</h2></div><div class="faq">
+<details><summary>Is this a physical product?</summary><p>No. It is a digital spreadsheet template.</p></details>
+<details><summary>Can I use it in Google Sheets?</summary><p>Yes. A Google Sheets-friendly version is included.</p></details>
+<details><summary>Does it include manga or manhwa chapters?</summary><p>No. It is a tracking template only; example entries are placeholders.</p></details>
+<details><summary>Can I customize it?</summary><p>Yes. Replace the example entries with your own reading information.</p></details>
+<details><summary>Can I resell the template?</summary><p>No. The included license is for personal use and does not permit redistribution or resale.</p></details>
+</div></section>
+<footer>© 2026 Your Shop Name • Manga & Manhwa Reading Tracker<br>Digital product • Personal use license</footer>
+</div></body></html>
